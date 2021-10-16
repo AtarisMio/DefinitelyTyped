@@ -1927,6 +1927,13 @@ interface ICanvasOptions extends IStaticCanvasOptions {
      * @default
      */
     height?: number | undefined;
+    
+    /**
+     * When the option is enabled, PointerEvent is used instead of MouseEvent.
+     * @type Boolean
+     * @default
+     */
+    enablePointerEvents?: boolean;
 }
 export interface Canvas extends StaticCanvas {}
 export interface Canvas extends ICanvasOptions {}
